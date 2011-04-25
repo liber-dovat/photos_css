@@ -1,0 +1,153 @@
+/*
+
+ Photos.css
+
+ */
+
+/*=====================================*/
+/* * ==================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: normal;
+  font-style: normal;
+  border: 0;
+  font-size: 1em;
+  text-decoration: none;
+  outline: none;
+}
+
+/*=====================================*/
+/* body ===============================*/
+
+body {
+  margin: 2%;
+}
+
+/*=====================================*/
+/* Fotos ==============================*/
+
+ul.photos li {
+  /*float: left;*/
+  display: inline;
+}
+
+ul.photos li a img {
+  -webkit-box-shadow: rgba(0, 0, 0, .25) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, .25) 0 1px 3px;
+  -o-box-shadow: rgba(0, 0, 0, .25) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, .25) 0 1px 3px;
+}
+
+ul.photos li a img {
+  padding: 5px;
+  background: #fff;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#eee));
+  background: -moz-linear-gradient(top, #fff, #eee);
+  background: -o-linear-gradient(top, #fff, #eee);
+  background: linear-gradient(top, #fff, #eee);
+}
+
+ul.photos li a img {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/*
+    -moz-transform: rotate(7.5deg);  /* FF3.5+
+       -o-transform: rotate(7.5deg);  /* Opera 10.5
+  -webkit-transform: rotate(7.5deg);  /* Saf3.1+, Chrome
+      -ms-transform: rotate(7.5deg);  /* IE9
+          transform: rotate(7.5deg);
+ */
+
+ul.photos li:nth-child(5n+1) a img {
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+}
+
+ul.photos li:nth-child(4n+1) a img {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+ul.photos li:nth-child(3n+1) a img {
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+ul.photos li:nth-child(even) a img {
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+
+ul.photos li:nth-child(3n) a img {
+  -webkit-transform: rotate(-2.5deg);
+  -moz-transform: rotate(-2.5deg);
+  -ms-transform: rotate(-2.5deg);
+  -o-transform: rotate(-2.5deg);
+  transform: rotate(-2.5deg);
+}
+
+ul.photos li:nth-child(5n) a img {
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+
+ul.photos li:nth-child(7n) a img {
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+}
+
+ul.photos li a:hover img,
+ul.photos li a:focus img {
+  -webkit-box-shadow: rgba(0, 0, 0, .5) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, .5) 0 1px 3px;
+  -o-box-shadow: rgba(0, 0, 0, .5) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, .5) 0 1px 3px;
+  position: relative;
+  top: -1px;
+  -webkit-transform: scale(1.05) rotate(-2deg);
+  -moz-transform: scale(1.05) rotate(-2deg);
+  -o-transform: scale(1.05) rotate(-2deg);
+  transform: scale(1.05) rotate(-2deg);
+}
+
+ul.photos li a:active img {
+  top: 0;
+  -webkit-box-shadow: rgba(0, 0, 0, .25) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, .25) 0 1px 3px;
+  -o-box-shadow: rgba(0, 0, 0, .25) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, .25) 0 1px 3px;
+  background: #eee;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#fff));
+  background: -moz-linear-gradient(top, #eee, #fff);
+  background: -o-linear-gradient(top, #eee, #fff);
+  background: linear-gradient(top, #eee, #fff);
+  -webkit-transform: scale(1) rotate(-2deg);
+  -moz-transform: scale(1) rotate(-2deg);
+  -o-transform: scale(1) rotate(-2deg);
+  transform: scale(1) rotate(-2deg);
+}
